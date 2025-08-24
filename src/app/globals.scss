@@ -1,0 +1,380 @@
+@import '@fontsource/tiktok-sans/300.css';
+@import '@fontsource/tiktok-sans/400.css';
+@import '@fontsource/tiktok-sans/500.css';
+@import '@fontsource/tiktok-sans/600.css';
+@import '@fontsource/tiktok-sans/700.css';
+@import '@fontsource/tiktok-sans/800.css';
+@import '@fontsource/tiktok-sans/900.css';
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-tiktok-sans: 'TikTok Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    font-family: var(--font-tiktok-sans);
+  }
+}
+.tw-container {
+    padding-inline: 1rem;
+
+    @media (min-width: 768px) {
+        padding-inline: 4rem;
+    }
+
+    @media (min-width: 1200px) {
+        padding-inline: 5rem;
+    }
+}
+
+.fluid-container {
+    padding: 0 8%;
+
+    @media(max-width: 1560px) {
+        padding: 0 5rem;
+    }
+
+    @media (max-width: 1024px) {
+        padding: 0 5%;
+    }
+
+    @media (max-width: 640px) {
+        padding: 0 15px;
+    }
+}
+
+.section_title_with_primary_two span {
+    color: #415AA5 !important;
+}
+
+.section_bold_span span {
+    font-weight: bold !important;
+}
+
+.section_title_with_secondary_five span {
+    color: #81E393 !important;
+}
+
+.container-xxl {
+    margin-inline: auto;
+    width: calc(100% - 2rem);
+
+    @media (min-width: 1200px) {
+        max-width: 1140px;
+    }
+
+    @media (min-width: 1400px) {
+        max-width: 1320px;
+    }
+}
+
+.offshore_banner {
+    background-image: url("../../public/assets/images/Offshore-software/Rectangle 161124773.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.offshore_banner_image {
+    background-image: url("../../public/assets/images/Offshore-software/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background-color: #070c1b8a;
+    }
+}
+
+.choose_usbg,
+footer {
+    background-image: url("../../public/assets/images/Offshore-software/choose_us_bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.driving_sec {
+    background-image: url("../../public/assets/images/Offshore-software/choose_us_bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.expertisebox {
+    transition: all 0.4s ease;
+
+    &:hover {
+        h3 {
+            color: #4054AE;
+            transition: all 0.4s ease;
+        }
+
+        .expertisebox-round {
+            background-color: #4054AE;
+            transition: all 0.4s ease;
+
+            img {
+                filter: brightness(0) invert(1);
+                /* makes it white */
+                transition: all 0.4s ease;
+            }
+        }
+    }
+}
+
+.concepts-process {
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 35px;
+        z-index: -1;
+        height: 90%;
+        border-left: 1px dashed #7187CA;
+        width: 100%;
+
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+}
+
+.curve-concept {
+    background-image: url("../../public/assets/images/Offshore-software/concept_bg.png");
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../../public/assets/images/Offshore-software/concept-overlay.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.trust_sec {
+    background-image: url("../../public/assets/images/Offshore-software/trust_secbg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.customers-column {
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        right: -90px;
+        width: 100px;
+        height: 100px;
+        background: transparent;
+        border: 10px solid #f2f2f2;
+        border-bottom-left-radius: 34px;
+        /* border-bottom: none !important; */
+        border-right: none !important;
+        border-top: none !important;
+    }
+
+    @media (max-width: 1024px) {
+        &::after {
+            display: none;
+        }
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spin-smooth {
+    animation: spin 8s linear infinite;
+}
+
+.shape-container {
+    background-color: #FFFFFF;
+    border-radius: 25px 0px 0px 0px;
+    position: absolute;
+    height: 60px;
+    width: 120px;
+
+    @media (max-width: 1120px) {
+        width: 130px;
+    }
+
+    @media (max-width: 767px) {
+        width: 120px;
+    }
+}
+
+.bottom-left-shape {
+    background-color: #FFFFFF;
+    position: absolute;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    clip-path: path("M0 0 Q0,30 30,30 L 0 30 Z");
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    transform: rotate(-90deg);
+}
+
+.bottom-right-shape {
+    background-color: #FFFFFF;
+    position: absolute;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    clip-path: path("M0 0 Q0,30 30,30 L 0 30 Z");
+    bottom: 100%;
+    right: 0;
+    transform: rotate(-90deg);
+}
+
+.arrow-container {
+    overflow: hidden;
+}
+
+.arrow-path-1 {
+    transition: transform 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition-delay: 0.1s;
+    transform: translateX(0);
+}
+
+.arrow-path-2 {
+    transition: transform 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transform: translateX(-100%);
+    transition-delay: 0s;
+}
+
+.animated-button:hover .arrow-path-1 {
+    transform: translateX(100%);
+    transition-delay: 0s;
+}
+
+.animated-button:hover .arrow-path-2 {
+    transform: translateX(0);
+    transition-delay: 0.1s;
+}
+
+/* Background slide animation */
+.bg-slide::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    left: 15px;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    background-color: #415AA5;
+    transition: all ease 0.4s;
+    border-radius: 7px;
+}
+
+.animated-button:hover .bg-slide::before {
+    width: calc(100% - 15px);
+}
+
+.animated-button:hover .button-text {
+    color: white;
+}
+
+.offshore_services_box {
+    transition: all 0.3s ease;
+
+    img {
+        transition: all 0.3s ease; // Apply to base state for consistent timing
+        transform: translateY(0);
+    }
+
+    &:hover {
+        img {
+            transform: translateY(-5px);
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); // easeOutQuad
+        }
+    }
+}
+
+.offshore_contactUs {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        height: 100%;
+        background-image: url("../../public/assets/images/Offshore-software/contact_us_overlay.png");
+        opacity: 0.45;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.swiper-pagination.swiper-pagination-horizontal {
+  position: initial;
+  @apply tw-mt-5;
+
+  .swiper-pagination-bullet{
+    @apply tw-w-3 tw-h-3 tw-rounded-full;
+    .swiper-pagination-bullet-active {
+      @apply tw-bg-blue-500;
+    }
+  }
+}
+
+.testimonial-card {
+    transition: all 0.3s ease;
+    &:hover {
+        @apply tw-bg-blue-500 tw-border-blue-500;
+        transition: all 0.3s ease;
+
+        h3,h4,p {
+            @apply tw-text-white;
+            transition: all 0.3s ease;
+        }
+        img {
+            @apply tw-border-white;
+            transition: all 0.3s ease;
+        }
+        hr {
+            @apply tw-border-white;
+            transition: all 0.3s ease;
+        }
+    }
+}
