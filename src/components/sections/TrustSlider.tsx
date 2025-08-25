@@ -5,7 +5,7 @@ import VerticalSlider from "../ui/VerticalSlider";
 const TrustSlider = () => {
   return (
     <>
-      <section className="trust_sec md:tw-py-20 tw-py-[50px]">
+      <section className="trust_sec md:tw-py-20">
         <div className="fluid-container">
           <div className="trust_main tw-px-6 2xl:tw-px-[130px] xl:tw-py-0 md:tw-py-[80px] tw-py-[50px] lg:tw-px-10 xl:tw-px-[64px] tw-bg-white tw-rounded-lg">
             <div className="tw-grid tw-grid-cols-12 2xl:tw-gap-16 xl:tw-gap-10 lg:tw-gap-6 tw-gap-6 tw-items-center">

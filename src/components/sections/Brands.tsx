@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-import { Navigation, Autoplay } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const Brands = () => {
