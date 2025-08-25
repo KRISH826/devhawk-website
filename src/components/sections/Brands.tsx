@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const Brands = () => {
   return (
     <>
-      <section className="tw-bg-gray-200 tw-my-[-75px] tw-pt-44 tw-pb-20">
+      <section className="tw-bg-gray-200 tw-my-[-75px] tw-pt-44 md:tw-pb-20 tw-pb-[50px]">
         <div className="tw-container">
           <div className="heading tw-text-center">
             <p className="lg:tw-text-xl tw-text-lg tw-text-dark-two tw-mb-[50px]">
